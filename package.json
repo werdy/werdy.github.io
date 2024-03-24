@@ -1,9 +1,9 @@
 {
-  "name": "zoomkoding.com",
+  "name": "werdy.github.io",
   "private": false,
   "description": "A neat blog theme for developers",
   "version": "3.0.0",
-  "author": "zoomkoding <zoomkoding@gmail.com>",
+  "author": "werdy <werdy.pie@gmail.com>",
   "dependencies": {
     "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.1.0",
@@ -57,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog"
+    "url": "https://github.com/werdy/werdy.github.io"
   },
   "bugs": {
-    "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog/issues"
+    "url": "https://github.com/werdy/werdy.github.io/issues"
   }
 }
