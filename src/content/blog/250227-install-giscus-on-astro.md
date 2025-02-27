@@ -1,7 +1,7 @@
 ---
 title: "Astro Yi Theme에 Giscus 댓글 기능 추가 하기"
 description: "Giscus를 사용한 댓글 기능 설치 방법을 설명합니다. "
-date: 2025-02-27 20:20
+date: 2025-02-27
 tags: ["Astro Yi", "Giscus", "댓글"]
 ---
 
