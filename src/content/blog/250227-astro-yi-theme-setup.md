@@ -81,6 +81,7 @@ jobs:
 ![image](https://github.com/user-attachments/assets/db475244-adcb-48f5-a405-861c5e274040)
 
 - 저장 하면, git action가 실행 되면서 github.io pages가 업데이트 됩니다.
+![image](https://github.com/user-attachments/assets/66a04af5-4ef1-4532-a6c7-7ac0d8ae72f2)
 
   
 
