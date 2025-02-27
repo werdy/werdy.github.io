@@ -1,4 +1,9 @@
-
+---
+title: "Astro Yi Theme에 Giscus 댓글 기능 추가 하기"
+description: "Giscus를 사용한 댓글 기능 설치 방법을 설명합니다. "
+date: 2025-02-27
+tags: ["Astro Yi", "Giscus", "댓글"]
+---
 
 https://github.com/apps/giscus 에 접속하여 Giscus를 설치 합니다. 
 ![image](https://github.com/user-attachments/assets/e7588a19-b694-4980-b24a-9a0ea5039c6a)
@@ -9,3 +14,43 @@ https://github.com/apps/giscus 에 접속하여 Giscus를 설치 합니다.
 - Settings -> General에서 스크롤을 하단으로 내려 Features내에 Discussions 항목을 체크한다.
 ![image](https://github.com/user-attachments/assets/15e33ef8-f22c-496c-9498-16262b72db7b)
 
+
+https://giscus.app/ko 에 접속하여 사용할 댓글 기능에 대한 설정하여 블로그에 설정할 scipt를 생성합니다. 
+![image](https://github.com/user-attachments/assets/ae869ce0-e03e-4dcf-90f5-51dcc7d5bab6)
+
+
+```
+<script src="https://giscus.app/client.js"
+        data-repo="werdy/werdy.github.io"
+        data-repo-id="R_kgDOOATFxQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOOATFxc4CnY9B"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
+</script>
+```
+
+
+![image](https://github.com/user-attachments/assets/462f733c-37d5-4856-bbf2-11ff72ac61b3)
+
+```
+    'data-repo': "werdy/werdy.github.io",
+    'data-repo-id': "R_kgDOOATFxQ",
+    'data-category': "Announcements",
+    'data-category-id': "DIC_kwDOOATFxc4CnY9B",
+    'data-mapping': "pathname",
+    'data-strict': "0",
+    'data-reactions-enabled': "1",
+    'data-emit-metadata': "0",
+    'data-input-position': "top",
+    'data-theme': "preferred_color_scheme",
+    'data-lang': "ko",
+    'crossorigin': "anonymous",
+```
