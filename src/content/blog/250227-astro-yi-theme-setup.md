@@ -60,5 +60,6 @@ jobs:
 - actions 로 이동하여 빌드가 잘 되었는지 확인 합니다. 
 ![image](https://github.com/user-attachments/assets/f99951ea-f654-4259-b66d-3b922e0b2bcb)
 
-
+- 빌드가 잘되었다면 userid.github.io 로 접속하면 기본 화면이 표시 됩니다. 
+![image](https://github.com/user-attachments/assets/0eb2c9c2-5e6d-4c46-a1cf-57e06913775f)
 
