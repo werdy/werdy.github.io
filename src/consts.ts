@@ -193,7 +193,7 @@ export const friendshipLinks =
  * walineConfig.whiteList {string[]} set some pages not to display reaction
  */
 export const comment = {
-  enable: false,
+  enable: true,
   type: 'giscus', // waline | giscus,
   walineConfig: {
     serverUrl: "",
@@ -219,7 +219,7 @@ export const comment = {
     'data-emit-metadata': "0",
     'data-input-position': "top",
     'data-theme': "preferred_color_scheme",
-    'data-lang': "ko",
+    'data-lang'="en"
     'crossorigin': "anonymous",
   }
 
