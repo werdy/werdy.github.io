@@ -14,7 +14,7 @@ tags: ["Astro Yi", "Giscus", "댓글"]
 ![image](https://github.com/user-attachments/assets/3f48133d-d78d-4a62-ba19-1af05e587483)
 
 - Settings -> General에서 스크롤을 하단으로 내려 Features내에 Discussions 항목을 체크한다.
-![image](https://github.com/user-attachments/assets/15e33ef8-f22c-496c-9498-16262b72db7b)
+![image](https://github.com/user-attachments/assets/cefe5d12-89b4-4862-beb4-9f0f8fe5d3d1)
 
 - https://giscus.app/ko 에 접속하여 사용할 댓글 기능에 대한 설정하여 블로그에 설정할 scipt를 생성합니다.
 $\it{\color{#DD6565}언어를 영어로 설정해야 에러가 나지 않습니다.}$
