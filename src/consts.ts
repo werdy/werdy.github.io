@@ -219,7 +219,7 @@ export const comment = {
     'data-emit-metadata': "0",
     'data-input-position': "top",
     'data-theme': "preferred_color_scheme",
-    'data-lang'="en"
+    'data-lang'="en",
     'crossorigin': "anonymous",
   }
 
