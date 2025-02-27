@@ -31,21 +31,21 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      
-      # - name: Install Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 18
-      #     cache: "npm"
 
-      - name: pnpm -v
-        run: pnpm -v
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
 
-      # - name: Install pnpm
-      #   run: npm install pnpm
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm install
 
       - name: Build Astro site
         run: npm run build
