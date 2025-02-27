@@ -1,7 +1,7 @@
 ---
 title: "Astro Yi Theme로 Github.io 설정하기 "
 description: "Astro Yi theme 설치 및 git actions 설정하여 content commit pages 발행 하는 방법을 설명합니다.  "
-date: 2025-02-27
+date: 2025-02-27 17:00
 tags: ["Astro Yi", "Setup"]
 ---
 
