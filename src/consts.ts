@@ -22,12 +22,12 @@ import {AnalyticsConfig} from "./types/analyticsTypes"
  *    All tags will be displayed in single page "/tags".
  */
 export const site = {
-  title: 'Astro Theme Yi', // required
+  title: 'HJ.YI', // required
   favicon: '/favicon.svg', // required
   description: 'Welcome to my independent blog website! ',
-  author: "Astro-Yi", // required
+  author: "HJ.YI", // required
   avatar: '/avatar.png', // required
-  url: 'https://astro-yi-nu.vercel.app', // required
+  url: 'https://werdy.github.io', // required
   motto: 'Actions speak louder than words.',
   recentBlogSize: 5,
   archivePageSize: 25,
@@ -136,7 +136,7 @@ export const infoLinks = [
   {
     icon: 'ri-github-fill',
     name: 'github',
-    outlink: 'https://github.com/cirry/astro-yi',
+    outlink: 'https://github.com/werdy/',
   },
   {
     icon: 'ri-rss-fill',
@@ -222,8 +222,6 @@ export const comment = {
     'data-lang': "en",
     'crossorigin': "anonymous",
   }
-
-  //
 }
 
 /**
@@ -233,15 +231,15 @@ export const comment = {
  * It defines and exports the default settings for Umami and Google Analytics.
  */
 export const analytics: AnalyticsConfig = {
-  enable: false,
+  enable: true,
   umamiConfig: {
-    enable: false,
-    id: "",
-    url: ""
+    enable: true,
+    id: "77cb9b4e-ccb6-4ed8-be05-98a75fa0e455",
+    url: "https://cloud.umami.is/script.js"
   },
   gaConfig: {
-    enable: false,
-    id: ""
+    enable: true,
+    id: "GTM-NBLWD9FB"
   },
   busuanzi: false,
 };
