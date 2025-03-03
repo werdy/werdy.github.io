@@ -26,7 +26,7 @@ export const site = {
   favicon: '/favicon.svg', // required
   description: 'Welcome to my independent blog website! ',
   author: "HJ.YI", // required
-  avatar: '/avatar.png', // required
+  avatar: '/avata250303.png', // required
   url: 'https://werdy.github.io', // required
   motto: 'Actions speak louder than words.',
   recentBlogSize: 5,
