@@ -22,7 +22,7 @@ import {AnalyticsConfig} from "./types/analyticsTypes"
  *    All tags will be displayed in single page "/tags".
  */
 export const site = {
-  title: 'Astro Theme Yi', // required
+  title: 'HJ.YI', // required
   favicon: '/favicon.svg', // required
   description: 'Welcome to my independent blog website! ',
   author: "HJ.YI", // required
@@ -136,7 +136,7 @@ export const infoLinks = [
   {
     icon: 'ri-github-fill',
     name: 'github',
-    outlink: 'https://github.com/cirry/astro-yi',
+    outlink: 'https://github.com/werdy/',
   },
   {
     icon: 'ri-rss-fill',
