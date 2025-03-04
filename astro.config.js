@@ -18,6 +18,9 @@ import {remarkButton} from "./src/plugins/remark-button.js";
 import {remarkHtml} from "./src/plugins/remark-html.js";
 
 
+import react from "@astrojs/react";
+
+
 export default defineConfig({
   site: 'https://astro-yi-nu.vercel.app',
   integrations: [sitemap(), tailwind(), solid(), expressiveCode({
@@ -28,7 +31,7 @@ export default defineConfig({
       uiFontFamily: "jetbrains-mono",
     },
     themeCssSelector: (theme) => `[data-theme="${theme.type}"]`
-  }), mdx()],
+  }), mdx(), react()],
   markdown: {
     remarkPlugins: [remarkModifiedTime, resetRemark, remarkDirective, remarkAsides({}), remarkCollapse({}), remarkGithubCard(), remarkButton(), remarkHtml()],
     rehypePlugins: [lazyLoadImage],

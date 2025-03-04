@@ -28,16 +28,15 @@
     "types": [
       "astro/env"
     ],
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js"
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
   "include": [
     "src/**/*.d.ts",
     "src/**/*.js",
-    "src/**/*.ts",
+    "src/**/*.ts"
   ],
   "exclude": [
     "src/**/.astro"
-
   ]
 }
