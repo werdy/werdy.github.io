@@ -22,10 +22,10 @@ import {AnalyticsConfig} from "./types/analyticsTypes"
  *    All tags will be displayed in single page "/tags".
  */
 export const site = {
-  title: 'HJ.YI', // required
+  title: 'Werdy', // required
   favicon: '/favicon.svg', // required
   description: 'Welcome to my independent blog website! ',
-  author: "HJ.YI", // required
+  author: "Werdy", // required
   avatar: '/avata250303.png', // required
   url: 'https://werdy.github.io', // required
   motto: 'Actions speak louder than words.',
