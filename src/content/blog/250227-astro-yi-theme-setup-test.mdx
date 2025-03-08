@@ -7,23 +7,36 @@ tags: ["Astro Yi", "Setup"]
 
 import React from "react";
 import { Button, Image } from "antd";
-import "antd/dist/antd.css";
+//import "antd/dist/antd.css";
 
-
-<Button type="primary" onClick={(e)=>alert("test")}>Ant Design Button</Button>
+<Button client:load type="primary" onClick={(e) => alert("test")}>
+  Ant Design Button
+</Button>
 
 <div>
-<Image
+  <Image
+    client:load
     width={200}
     height={200}
     src="https://github.com/user-attachments/assets/46ffe4fc-d633-4b7b-bb91-d0078973e07f"
   />
-
-<Image
+</div>
+<div>
+  <Image
+    client:load
     width={200}
     height={200}
     src="https://github.com/user-attachments/assets/a3f1be1c-24a2-4758-894d-919f7270c0ba"
-  />  
+  />
+</div>
+
+<div
+  style={{ cursor: "pointer" }}
+  onClick={(e) => {
+    alert("asdfasd");
+  }}
+>
+  스타일, onclick
 </div>
 
 ![image](https://github.com/user-attachments/assets/46ffe4fc-d633-4b7b-bb91-d0078973e07f)
