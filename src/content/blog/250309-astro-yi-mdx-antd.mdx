@@ -1,0 +1,53 @@
+---
+title: "Astro Yi Theme에서 Ant Design react component를 사용하기 "
+description: "Astro Yi theme에서 MDX를 활성화 하고 Ant Design react component를 content 작성시 사용하는 방법을 설명합니다.   "
+date: 2025-03-09
+tags: ["Astro Yi", "MDX", "AntD"]
+---
+import React from "react";
+import { Button, Image } from "antd";
+
+
+### Astro에 React 추가
+- VS code를 설치 합니다. (https://code.visualstudio.com)
+- Node.js를 설치 합니다. (https://nodejs.org/ko)
+- Astro theme 소스를 clone 하여 local에 저장하고 VS code로 저장된 폴더를 Open합니다.
+```
+# 본인 소스 주소로 clode
+git clone https://github.com/cirry/astro-yi.git 
+```
+
+- VS Code에서 ctrl+` 단축키로 터미널을 열고 아래 명령어를 사용하여 Astro Yi 개발 환경을 설정 합니다. 
+```
+npm install -g pnpm # install pnpm
+pnpm i  # installs dependencies
+npm run dev # preview, starts local dev server at localhost:4321
+```
+  <Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/661de5e4-e560-41b9-af1d-285d3459935f"
+  />
+
+### react 추가 명령
+```
+npx astro add react    
+```
+<Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/46ffe4fc-d633-4b7b-bb91-d0078973e07f"
+  /> 
+  <Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/a3f1be1c-24a2-4758-894d-919f7270c0ba"
+  />
+
+# ant design react component설치
+```
+pnpm add antd
+```
