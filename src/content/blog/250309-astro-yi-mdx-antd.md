@@ -47,7 +47,19 @@ npx astro add react
     src="https://github.com/user-attachments/assets/a3f1be1c-24a2-4758-894d-919f7270c0ba"
   />
 
-# ant design react component설치
+### ant design react component설치
 ```
 pnpm add antd
 ```
+
+### 변경사항 적용
+- tsconfig.json, pnpm-lock.yaml, package.json, astro.config.js 파일을 push합니다.
+<Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/8037fb1c-501d-4d91-abb1-7085e8beed67"
+  /> 
+
+
+
