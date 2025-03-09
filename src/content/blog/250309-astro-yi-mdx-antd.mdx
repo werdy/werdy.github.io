@@ -31,6 +31,7 @@ npm run dev # preview, starts local dev server at localhost:4321
   />
 
 ### Astro Yi Theme에 React 추가 설정
+- 아래 명령어를 사용하어 React를 사용할 수 있도록 설정합니다. 수행 중 계속 할 지 묻는데 Y를 눌러 진행합니다.
 ```
 npx astro add react    
 ```
@@ -48,10 +49,11 @@ npx astro add react
   />
 
 ### Ant Design component설치
+- 아래 명령어를 사용하여 Ant Design react component를 설치 합니다. 
+- 설치가 완료 되면 tsconfig.json, pnpm-lock.yaml, package.json, astro.config.js 파일들을 git push합니다.
 ```
 pnpm add antd
 ```
-- tsconfig.json, pnpm-lock.yaml, package.json, astro.config.js 파일을 push합니다.
 
 
 ### Ant Design Component 사용하여 글 쓰기
@@ -65,7 +67,7 @@ pnpm add antd
   />   
 
 - 사용할 AntD. 컴포넌트를 문서 상단에서 import합니다. 
-( https://ant.design/components/overview에서 사용가능한 컴포넌트를 확인 할 수 있습니다. )
+( https://ant.design/components/overview에서 사용 가능한 컴포넌트를 확인 할 수 있습니다. )
 <Image
     client:load
     width={200}
@@ -78,9 +80,10 @@ import { Image } from "antd";
 
 - Component를 사용하여 글을 작성합니다.
   - 사용 시 <span style="color:red;">client load</span> Astro Directives를 설정해 클릭 이벤트가 정상적으로 작동 합니다. (https://docs.astro.build/en/reference/directives-reference/)
+  - https://ant.design/components/overview 에서 각 컴포넌트 별 예시 코드도 확인이 가능합니다.
 ```
 <Image
-    client:load
+    client:load  # Astro에서 Click event가 처리 될 수 있도록 Astro Directives를 설정
     width={200}
     height={200}
     src="https://github.com/user-attachments/assets/8e78a329-4b96-48b6-86e6-bd8d9b14aa7e"
