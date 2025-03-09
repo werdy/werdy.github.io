@@ -58,17 +58,40 @@ pnpm add antd
     client:load
     width={200}
     height={200}
-    src="https://github.com/user-attachments/assets/8037fb1c-501d-4d91-abb1-7085e8beed67"
+    src="https://github.com/user-attachments/assets/36d9d41a-cce6-4948-ae81-3973095db269"
   /> 
 
-### Ant Design Component를 사용하여 글 쓰기
-- https://ant.design/components/overview에서 사용가능한 컴포넌트를 확인 할 수 있습니다. 사용할 컴포넌트를 import합니다. 
 
+### Ant Design Component를 사용하여 글 쓰기
+- 확장자를 .mdx 로 문서를 만듭니다.
+  -- 확장자를 mdx로 할 경우 클릭보드 이미지 붙여 넣기 시 자동 업로드 기능이 동작하지 않습니다. 파일명 입력창에 .md 상태로 작성하고 commit 하기 전에 mdx로 변경하여  올리는 것을 추천합니다.
+<Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/b95953d5-b4a4-4d0a-827f-1d3e22929177"
+  />   
+
+- 사용할 AntD. 컴포넌트를 import합니다. ( https://ant.design/components/overview에서 사용가능한 컴포넌트를 확인 할 수 있습니다. )
 ```
-import React from "react";
 import { Image } from "antd";
 ```
-  
-![image](https://github.com/user-attachments/assets/c3f7eb90-69c8-4b1b-b983-d4d2b4100ebb)
+<Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/8e78a329-4b96-48b6-86e6-bd8d9b14aa7e"
+  /> 
 
+- Component를 사용하여 글을 작성합니다.
+  - 사용시 <div stype="color:darkred">"client:load"</div> Astro Directives를 설정해 클릭 이벤트가 정상적으로 작동 합니다. (https://docs.astro.build/en/reference/directives-reference/)
+```
+<Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/8e78a329-4b96-48b6-86e6-bd8d9b14aa7e"
+  /> 
+
+```
 
