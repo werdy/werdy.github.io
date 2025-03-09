@@ -51,15 +51,7 @@ npx astro add react
 ```
 pnpm add antd
 ```
-
-### 변경사항 적용
 - tsconfig.json, pnpm-lock.yaml, package.json, astro.config.js 파일을 push합니다.
-<Image
-    client:load
-    width={200}
-    height={200}
-    src="https://github.com/user-attachments/assets/36d9d41a-cce6-4948-ae81-3973095db269"
-  /> 
 
 
 ### Ant Design Component 사용하여 글 쓰기
@@ -72,19 +64,20 @@ pnpm add antd
     src="https://github.com/user-attachments/assets/b95953d5-b4a4-4d0a-827f-1d3e22929177"
   />   
 
-- 사용할 AntD. 컴포넌트를 import합니다. ( https://ant.design/components/overview에서 사용가능한 컴포넌트를 확인 할 수 있습니다. )
+- 사용할 AntD. 컴포넌트를 문서 상단에서 import합니다. 
+( https://ant.design/components/overview에서 사용가능한 컴포넌트를 확인 할 수 있습니다. )
+<Image
+    client:load
+    width={200}
+    height={200}
+    src="https://github.com/user-attachments/assets/8e78a329-4b96-48b6-86e6-bd8d9b14aa7e"
+  /> 
 ```
 import { Image } from "antd";
 ```
-<Image
-    client:load
-    width={200}
-    height={200}
-    src="https://github.com/user-attachments/assets/8e78a329-4b96-48b6-86e6-bd8d9b14aa7e"
-  /> 
 
 - Component를 사용하여 글을 작성합니다.
-  - 사용 시 <span style="color:red;">client:load</span> Astro Directives를 설정해 클릭 이벤트가 정상적으로 작동 합니다. (https://docs.astro.build/en/reference/directives-reference/)
+  - 사용 시 <span style="color:red;">client load</span> Astro Directives를 설정해 클릭 이벤트가 정상적으로 작동 합니다. (https://docs.astro.build/en/reference/directives-reference/)
 ```
 <Image
     client:load
@@ -92,6 +85,5 @@ import { Image } from "antd";
     height={200}
     src="https://github.com/user-attachments/assets/8e78a329-4b96-48b6-86e6-bd8d9b14aa7e"
   /> 
-
 ```
 
