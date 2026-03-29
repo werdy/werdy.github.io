@@ -1,5 +1,5 @@
 ---
-title: "werdy.github.io 블로그 글 작성 가이드"
+title: "블로그 작성 안내"
 description: "Astro-Yi 테마 기반 werdy.github.io 사이트용 마크다운 포스트 작성 가이드와 예제"
 date: 2026-03-29
 ---
