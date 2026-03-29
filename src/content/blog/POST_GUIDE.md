@@ -1,41 +1,40 @@
 ---
-title: "How to write blog posts for werdy.github.io"
-description: "Guidelines and examples for creating markdown posts compatible with the Astro-Yi based werdy.github.io site"
+title: "werdy.github.io 블로그 글 작성 가이드"
+description: "Astro-Yi 테마 기반 werdy.github.io 사이트용 마크다운 포스트 작성 가이드와 예제"
 date: 2026-03-29
 ---
 
-# Blog Post Authoring Guide (werdy.github.io)
+# werdy.github.io 블로그 작성 안내
 
-This document explains how to create new blog posts for the werdy.github.io site (Astro Yi theme). Place new files under `src/content/blog/` (or a subfolder) as `.md` or `.mdx` files. After committing and pushing, GitHub Actions will build and publish the site.
+이 문서는 werdy.github.io 사이트(Astro Yi 테마)를 위한 새 블로그 포스트 작성 방법을 설명합니다. 새 파일은 `src/content/blog/` 폴더(또는 하위 폴더)에 `.md` 또는 `.mdx` 형식으로 추가하세요. 커밋(push)하면 GitHub Actions가 빌드하여 사이트를 배포합니다.
 
 ---
 
-## Filename and location
+## 파일명과 위치
 
-- Put posts in: `src/content/blog/`
-- Use a descriptive filename, e.g. `2026-03-29-new-feature.md` or `my-topic.md`.
-- Files may be `.md` or `.mdx` (see examples in repo).
+- 위치: `src/content/blog/`
+- 권장 파일명: `2026-03-29-new-feature.md` 또는 `my-topic.md`처럼 설명적인 이름
+- 파일 확장자는 `.md` 또는 `.mdx` 가능(레포의 기존 예시를 참고하세요)
 
 ## Frontmatter (YAML)
 
-At the top of each file include a YAML frontmatter block with metadata. Common fields used in existing posts:
+파일 맨 위에 YAML frontmatter 블록을 포함해야 합니다. 기존 포스트에서 사용되는 주요 필드는 다음과 같습니다:
 
-- `title` (string) — required. The post title.
-- `description` (string) — short summary shown in cards and meta description.
-- `date` (YYYY-MM-DD) — required. Publication/creation date.
-- `tags` (array) — example: `tags: [astro, feature]`.
-- `category` (array or string) — optional grouping, used by theme (e.g. `category: [astro, feature]`).
-- `mermaid: true` — enable Mermaid diagrams on the page (optional).
-- `mathjax: true` — enable MathJax rendering (optional).
-- `ogImage` — full URL to OpenGraph image (optional).
-- `title`/`description`/`date` should be present for best compatibility.
+- `title` (문자열) — 필수: 글 제목
+- `description` (문자열) — 카드와 meta description에 노출되는 요약
+- `date` (YYYY-MM-DD) — 필수: 게시일 또는 작성일
+- `tags` (배열) — 예: `tags: [astro, feature]`
+- `category` (문자열 또는 배열) — 테마에서 사용하는 분류
+- `mermaid: true` — Mermaid 다이어그램 활성화(옵션)
+- `mathjax: true` — MathJax 활성화(옵션)
+- `ogImage` — OpenGraph 이미지용 전체 URL(옵션)
 
-Example frontmatter:
+예시 frontmatter:
 
 ```yaml
 ---
-title: "My new post"
-description: "Short summary of the post"
+title: "새 포스트 제목"
+description: "포스트의 짧은 설명"
 date: 2026-03-29
 tags: [guide, astro]
 mermaid: true
@@ -43,16 +42,18 @@ mathjax: true
 ---
 ```
 
-## Content features supported
+## 콘텐츠 작성 가이드
 
-The site (Astro Yi theme) supports many Markdown/MDX features. Use these patterns when authoring:
+사이트(테마)는 다양한 Markdown/MDX 기능을 지원합니다. 다음 패턴을 따르세요:
 
-- Headings: `#`, `##`, `###` etc.
-- Horizontal rules: `---`
-- Emphasis: `**bold**`, `_italic_`, `~~strikethrough~~`
-- Blockquotes: `> quote`
-- Lists: `-`, `*`, `+` for unordered; numbers for ordered
-- Code blocks: triple-fenced with language for syntax highlighting:
+- 제목: `#`, `##`, `###` 등
+- 구분선: `---`
+- 강조: `**굵게**`, `_이탤릭_`, `~~취소선~~`
+- 인용: `> 인용문`
+- 목록: `-`, `*`, `+` (순서 있는 목록은 숫자 사용)
+- 코드 블록: 트리플 백틱(```)과 언어 표기로 문법 하이라이팅
+
+예시:
 
 ```js
 ```js
@@ -60,86 +61,86 @@ console.log('hello world')
 ```
 ```
 
-- Code block titles and expressive-code markers (see examples in repo).
+- 코드 블록 제목, Expressive Code 마커 등 레포의 기존 예시를 참고하세요.
 
-- Images: standard Markdown `![alt](url)` or use repo-hosted images. For large images consider hosting on a CDN and using absolute URL.
+- 이미지: `![alt](url)` 형식 사용. 로컬 이미지는 `public/`에 두고 `/assets/...` 또는 `/public/...` 경로로 참조하세요.
 
-- Links: standard Markdown links `[text](url)`.
+- 링크: `[텍스트](URL)` 형식 사용
 
-## Astro-Yi specific features/examples
+## Astro-Yi 테마 고유 기능 예시
 
-The theme enables several custom shortcodes and features — examples from existing posts:
+기존 포스트에서 사용된 테마별 단축문법 예시:
 
-- Buttons
+- 버튼
 
 ```text
 :btn[Google]{href="https://www.google.com"}
 ```
 
-- GitHub card
+- GitHub 카드
 
 ```text
 ::github{repo="owner/repo"}
 ```
 
-- Collapse blocks
+- 접기(collapse)
 
 ```text
 :::collapse
-Hidden content
+숨겨진 내용
 :::
 ```
 
-- Admonitions (tip/note/caution/danger)
+- 어드모니션(admonition)
 
 ```markdown
-:::tip[Title]
-Helpful tip text
+:::tip[팁 제목]
+유용한 팁 텍스트
 :::
 ```
 
-- Mermaid diagrams: set `mermaid: true` in frontmatter and include a ```mermaid fenced block.
-- MathJax: set `mathjax: true` in frontmatter and use `$ ... $` or `$$ ... $$` for inline/block math.
+- Mermaid: frontmatter에 `mermaid: true` 추가 후 ```mermaid 블록 사용
+- MathJax: frontmatter에 `mathjax: true` 추가 후 `$ ... $` 또는 `$$ ... $$` 사용
 
-## Comments (Giscus)
+## 댓글 (Giscus)
 
-If you use the built-in comment support (Giscus), configure `src/consts.ts` per the repo examples and generate the script from https://giscus.app/. The post itself does not need extra markup — theme will connect pages to discussions via mapping (pathname).
+Giscus 댓글을 사용하려면 `src/consts.ts`에서 설정을 활성화하고, https://giscus.app/ 에서 생성한 스크립트를 적용하세요. 포스트 자체에는 별도 마크업이 필요 없으며, 테마가 페이지 경로를 매핑해 Discussions를 연결합니다.
 
-## Images and assets
+## 이미지 및 에셋
 
-- Place local images in `public/` or host externally. Use absolute URLs for public CDN-hosted images to avoid broken links.
-- If you add images to the repo, commit them under `public/` or a dedicated `assets/` path and reference them by `/assets/...` or `/public/...` path.
+- 로컬 이미지는 `public/` 또는 `public/assets/` 같은 폴더에 넣고 절대 경로(`/assets/...`)로 참조하세요.
+- CDN에 올려 절대 URL을 사용하면 외부 링크 차단 문제를 줄일 수 있습니다.
 
-## MDX notes
+## MDX 주의사항
 
-- `.mdx` files may include JSX components. Keep component usage minimal and ensure components are available in the theme.
-- If you use MDX, ensure exported components or imports are valid in the site build context.
+- `.mdx` 파일에서는 JSX 컴포넌트를 사용할 수 있습니다. 컴포넌트는 테마 빌드 환경에서 사용 가능한지 확인하세요.
 
-## Commit & publish workflow
+## 커밋 및 배포 워크플로
 
-1. Create the new `.md` or `.mdx` file under `src/content/blog/`.
-2. Commit with a clear message, e.g. `git add src/content/blog/2026-03-29-my-post.md && git commit -m "Add: my-post"`.
-3. Push to `main` (or the branch configured for Pages). GitHub Actions will run and publish to GitHub Pages automatically if configured.
+1. `src/content/blog/`에 새 `.md` 또는 `.mdx` 파일 생성
+2. 커밋: `git add src/content/blog/your-post.md && git commit -m "Add: your-post"`
+3. 푸시: `git push origin main` (또는 Pages에 설정된 브랜치)
+4. GitHub Actions가 빌드하고 Pages에 배포합니다.
 
-## Examples in this repo
+## 레포의 예시 참고
 
-See existing posts in this folder for patterns:
-- `250227-astro-yi-theme-setup.md` — shows setup steps and images.
-- `markdown-elements.md` — demonstrates markdown capabilities.
-- `new-features.md` — shows mermaid, mathjax, admonitions, and expressive code usage.
+- `250227-astro-yi-theme-setup.md` — 설치 및 이미지 사용 예
+- `markdown-elements.md` — 마크다운 기능 예제
+- `new-features.md` — mermaid, mathjax, admonition, expressive code 예
 
-## Checklist before publishing
+## 게시 전 체크리스트
 
-- [ ] Title, description, date present in frontmatter
-- [ ] Tags and category as needed
-- [ ] Images referenced with correct path or hosted URL
-- [ ] If using mermaid/mathjax, enable in frontmatter
-- [ ] Run `pnpm build` (or `npm run build`) locally to confirm no build errors
+- [ ] frontmatter에 title, description, date 포함
+- [ ] tags, category 필요 시 추가
+- [ ] 이미지 경로 확인
+- [ ] mermaid/mathjax 사용 시 frontmatter 활성화
+- [ ] 로컬에서 `pnpm build`로 빌드 테스트(권장)
 
 ---
 
-If you want, I can:
-- Create a pull request template or CONTRIBUTING.md that includes this guide.
-- Add a small script to create a new post with frontmatter pre-filled.
-- Automatically commit & push this file to the repository (I can do that now).
+원하면 제가 다음을 대신 해줄게:
+- 이 가이드를 번역한 파일을 리모트에 커밋하고 푸시(SSH 인증이 설정되어 있으면 내가 푸시 가능)
+- 새로운 포스트 템플릿(스크립트) 추가 또는 PR 생성
+- 포스트 작성 템플릿을 자동화하는 스크립트 생성
 
+원하시면 지금 바로 이 파일을 Git에 커밋하고 푸시해줄게. 원하나요?
